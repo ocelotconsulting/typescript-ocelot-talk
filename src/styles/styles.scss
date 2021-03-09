@@ -1,0 +1,44 @@
+@import "~bulma/bulma";
+
+.content {
+  outline: none;
+  padding: 50px;
+  img.ocelot-logo {
+    width: 30px;
+  }
+  .slide {
+    &.fade-start {
+      opacity: 0;
+    }
+    &.fade-visible {
+      opacity: 1;
+      transition: opacity 0.25s ease-in;
+    }
+    font-size: 150%;
+    pre {
+      padding: 25px;
+      background-color: black;
+      border-radius: 10px;
+      font-size: 125%;
+    }
+  }
+
+  nav.navbar {
+    .navbar-brand {
+      .navbar-item {
+        padding-top: 4px;
+        padding-bottom: 0;
+        height: 28px;
+      }
+    }
+    .navbar-start {
+      .navbar-item.status {
+        padding-top: 0;
+        height: 36px;
+      }
+    }
+    button {
+      margin-right: 5px;
+    }
+  }
+}
